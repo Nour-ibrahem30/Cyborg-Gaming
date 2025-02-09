@@ -223,7 +223,7 @@ html{
     padding-bottom: var(--Padding-bottom);
 }
 .Details .Container{
-    height: 150vh;
+    height: fit-content;
     background-color: var(--Section-Color);
     padding: 25px 50px;
     border-radius: 30px;
@@ -375,6 +375,15 @@ html{
     padding: 25px 25px;
     border-radius: 30px;
 }
+.Details .Featured-Bottom > h2{
+    color: var(--Color-Element);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.Details .Featured-Bottom > h2 span{
+    color: white;
+}
 .Details .Featured-Bottom .Parent-Box{
     display: flex;
     justify-content: space-between;
@@ -386,20 +395,48 @@ html{
 ,.Right-Box{
     width: 50%;
 }
+.Details .Featured-Bottom .Box .Imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 .Details .Featured-Bottom .Parent-Box .Box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0;
+    margin-bottom: 30px;
 }
-.Details .Featured-Bottom .Parent-Box .Box .Child{
+.Details .Featured-Bottom .Box .Child{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 12px;
 }
-.Details .Featured-Bottom .Parent-Box .Box  img{
+.Details .Featured-Bottom .Box  img{
     border-radius: 15px;
+}
+.Details .Featured-Bottom .Box  .Imgs .Child > span:last-child{
+    color: #777;
+}
+.Details .Featured-Bottom .Box .Child > i:first-child{
+    color: yellow;
+}
+.Details .Featured-Bottom .Box .Child > i:last-child{
+    color: var(--Color-Element);
 }
 /* End Featured Bottom */
 /* End Details */
+/* Start Footer */
+Footer .Copy-Right {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+Footer .Copy-Right p {
+    color: white;
+    font-size: 20px;
+}
+Footer .Copy-Right span {
+    color: var(--Color-Element);
+}
+/* End Footer */
