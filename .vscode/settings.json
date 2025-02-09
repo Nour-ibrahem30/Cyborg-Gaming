@@ -1,12 +1,29 @@
 {
-    "cSpell.words": [
-        "Dota",
-        "Gamezer",
-        "ibrahem",
-        "Kengan",
-        "Nour",
-        "Royale",
-        "templatemo",
-        "Warface"
-    ]
+  "cSpell.words": [
+    "Dota",
+    "Fortnite",
+    "Gamezer",
+    "ibrahem",
+    "Kengan",
+    "Nour",
+    "Royale",
+    "templatemo",
+    "Warface"
+  ],
+  "terminal.integrated.commandsToSkipShell": [
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2F4kwallpapers.com%2F2k-wallpapers%2F&psig=AOvVaw1Ch5O8q2TilZHcUWK9eBuO&ust=1739092326886000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDYnPvds4sDFQAAAAAdAAAAABAE"
+  ],
+  "background.fullscreen": {
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZGhcQ8uClhEkNKKv56aKjYjTUXkEck48ew&s"
+    ],
+    "opacity": 0.3,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  },
+  "workbench.editor.autoLockGroups": {
+    "default": true
+  }
 }

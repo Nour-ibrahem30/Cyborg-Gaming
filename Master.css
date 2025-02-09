@@ -258,6 +258,20 @@ html{
     text-align: left;
     color: white;
 }
+.Home .Section-One .Text h2{
+    font-size: 31px;
+    width: 20ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 4s 3s steps(20) infinite alternate-reverse;
+}
+/* Start Animation */
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+}
 .Home .Section-One .Text h4{
     width: 451px;
     height: 0;
@@ -265,9 +279,6 @@ html{
     font-weight: bold;
     text-align: left;
     margin-top: 40px;
-}
-.Home .Section-One .Text h2{
-    font-size: 31px;
 }
 .Home .Section-One .Text span {
     color: var(--Color-Element)

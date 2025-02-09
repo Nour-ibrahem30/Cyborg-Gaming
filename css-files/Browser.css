@@ -277,27 +277,27 @@ html{
     color: var(--Color-Element);
 }
 .Browser .Featured .Featured-left .Parent-Box .Box{
-    animation-name: slider-Show;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-delay: 20s;
-    animation-iteration-count: infinite;
+    animation: slider-Show 30s linear infinite;
     transition: all 0.5s;
 }
-@keyframes slider-Show{
-    0%{
-        transform: translateX(0); 
+@keyframes slider-Show {
+    0% {
+        transform: translateX(0);
     }
-    25%{
-        transform: translateX(-220px); 
+
+    25% {
+        transform: translateX(-220px);
     }
-    50%{
+
+    50% {
         transform: translateX(-450px);
     }
-    75%{
+
+    75% {
         transform: translateX(-700px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
     }
 }
