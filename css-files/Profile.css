@@ -1,0 +1,527 @@
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --Padding-top: 60px;
+    --Padding-Bottom: 60px;
+    --Color-Element: #ec6090;
+    --Color-Text: #666461;
+    --Span-Color: white;
+    --Section-Color: #27292a;
+    --body-color: #1f2122;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .Container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .Container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .Container {
+        width: 1170px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--Color-Element);
+    color: white;
+}
+
+/* End global rules */
+/* STart Head */
+.Header {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .Header {
+        width: 100%;
+        display: block;
+        background-color: white;
+        border-radius: 50px;
+    }
+}
+
+.Header .Links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px 10px 7px;
+    margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+    .Header .Links {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Header .Links {
+        display: grid;
+        height: 50vh;
+        grid-template-rows: repeat(2, 100px);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 30px;
+    }
+}
+
+.Header .Links .First-Element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Header .Links .First-Element {
+        gap: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .Header .Links .First-Element .Logo a img {
+        height: 40px;
+        width: 140px;
+    }
+}
+
+.Header .Links .First-Element .Inputs input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: var(--Section-Color);
+    color: var(--Color-Text);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Header .Links .First-Element .Inputs input {
+        display: none;
+    }
+}
+
+.Header .Links .First-Element .Inputs input::placeholder {
+    padding-left: 10px;
+}
+
+.Header .Links .First-Element .Inputs {
+    position: relative;
+}
+
+.Header .Links .First-Element .Inputs i:first-child {
+    position: absolute;
+    right: 11px;
+    bottom: 11px;
+    color: var(--Color-Text);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Header .Links .First-Element .Inputs i:first-child {
+        display: none;
+    }
+}
+
+.Header .Links .Links-Items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Header .Links .Links-Items ul {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: repeat(5, 1fr);
+        text-align: center;
+    }
+}
+
+.Header .Links .Links-Items ul li {
+    margin-left: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Header .Links .Links-Items ul li {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.Header .Links .Links-Items ul li a {
+    color: var(--Color-Text);
+    text-decoration: none;
+}
+
+.Header .Links .Links-Items ul li:nth-child(5) a {
+    color: var(--Color-Element);
+}
+
+.Header .Links .Links-Items ul li a:hover {
+    color: var(--Color-Element);
+}
+
+.Header .Links .Links-Items ul li:nth-child(5) {
+    width: 120px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Section-Color);
+    border-radius: 30px;
+    padding: 18px;
+    transition: all 0.3s;
+}
+
+.Header .Links .Links-Items ul li:nth-child(5) {
+    background-color: var(--Color-Element);
+}
+
+.Header .Links .Links-Items ul li:nth-child(5) a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .Header .Links .Links-Items ul li:nth-child(5) {
+        width: 0;
+        height: 0;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+    }
+}
+
+.Header .Links .Links-Items ul li img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Header .Links .Links-Items ul li img {
+        display: none;
+    }
+}
+
+/* End Head */
+/* Start profile */
+.Profile .Container {
+    background-color: var(--Section-Color);
+    height: fit-content;
+    padding: 50px 40px;
+    border-radius: 30px;
+}
+
+.Profile .Parent-Articles {
+    background-color: var(--body-color);
+    padding: 20px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Profile .Parent-Articles .Articles:first-child {
+    display: flex;
+    gap: 20px;
+}
+
+.Profile .Parent-Articles .Articles:first-child img {
+    height: 300px;
+    border-radius: 30px;
+}
+
+.Profile .Parent-Articles .Articles:first-child .Text {
+    width: 380px;
+    padding: 5px;
+}
+
+.Profile .Parent-Articles .Articles:first-child .Text p:nth-child(1) {
+    background-color: var(--Color-Element);
+    color: white;
+    padding: 10px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.Profile .Parent-Articles .Articles:first-child .Text p:nth-child(2) {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Profile .Parent-Articles .Articles:first-child .Text p:nth-child(3) {
+    color: var(--Color-Text);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.Profile .Parent-Articles .Articles:first-child .Text a {
+    color: var(--Color-Element);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid var(--Color-Element);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.Profile .Parent-Articles .Articles:first-child .Text a:hover {
+    background-color: var(--Color-Element);
+    color: white
+}
+
+.Profile .Parent-Articles .Articles:last-child .Parent-Box {
+    background-color: var(--Section-Color);
+    padding: 30px;
+    border-radius: 30px;
+    width: 350px;
+}
+
+.Profile .Parent-Articles .Articles:last-child .Parent-Box .Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #666;
+}
+
+.Profile .Parent-Articles .Articles:last-child .Parent-Box .Box p {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Profile .Parent-Articles .Articles:last-child .Parent-Box .Box span {
+    color: var(--Color-Element);
+}
+
+.Content-Profile {
+    padding: 20px 20px;
+    margin-top: 30px;
+    background-color: var(--body-color);
+    height: fit-content;
+    border-radius: 30px;
+}
+
+.Profile .Head-Profile h4 {
+    text-decoration: underline;
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.Profile .Head-Profile h4 em {
+    text-decoration: none;
+    color: var(--Color-Element);
+    font-size: 30px;
+    font-style: normal;
+}
+
+.Profile .Videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Profile .Videos .Video {
+    background-color: var(--Section-Color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Profile .Videos .Video .Img img {
+    border-radius: 30px;
+}
+
+.Profile .Videos .Video .Text p {
+    color: white;
+    font-size: 18px;
+}
+
+.Profile .Videos .Video .Footer-Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Profile .Videos .Video .Icon span {
+    color: white
+}
+
+.Profile .Videos .Video .Icon i {
+    color: var(--Color-Element);
+}
+
+.Profile .Content-Profile .Link {
+    background-color: var(--Color-Element);
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 21px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.Profile .Content-Profile .Link a {
+    text-decoration: none;
+    color: white;
+}
+
+.Profile .Content-Profile .Link:hover {
+    background-color: white;
+}
+
+.Profile .Content-Profile .Link:hover a {
+    color: var(--Color-Element);
+}
+
+.Content-Profile .Section-Three {
+    margin-top: 30px;
+    background-color: var(--body-color);
+    height: fit-content;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.Content-Profile .Section-Three .Text h4 {
+    font-size: 35px;
+    color: white;
+    position: relative;
+}
+
+.Content-Profile .Section-Three .Text h4::before {
+    content: '';
+    position: absolute;
+    width: 208px;
+    height: 5px;
+    background-color: white;
+    bottom: -9px;
+    left: 5px;
+}
+
+.Content-Profile .Section-Three .Text span {
+    color: var(--Color-Element);
+}
+
+.Content-Profile .Section-Three .Parent-Box {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Content-Profile .Section-Three .Parent-Box .Child-Box {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.Content-Profile .Section-Three .Parent-Box .Flex-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.Content-Profile .Section-Three .Parent-Box .Child-Box .Img img {
+    height: 80px;
+    border-radius: 20px;
+}
+
+.Content-Profile .Section-Three .Parent-Box .Flex-Box .Box {
+    width: 100px;
+    text-align: center;
+}
+
+.Content-Profile .Section-Three .Parent-Box .Flex-Box .Box p {
+    color: white;
+    font-size: 15px;
+}
+
+.Content-Profile .Section-Three .Parent-Box .Flex-Box .Box p:nth-child(2) {
+    color: #777;
+}
+
+/* End profile */
+/* Start Footer */
+Footer .Copy-Right {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+Footer .Copy-Right p {
+    color: white;
+    font-size: 20px;
+}
+
+Footer .Copy-Right span {
+    color: var(--Color-Element);
+}
+
+/* End Footer */

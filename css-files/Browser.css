@@ -1,73 +1,85 @@
 /* start global rules */
-*{
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-:root{
-    --Padding-top:60px;
-    --Padding-Bottom:60px;
-    --Color-Element:#ec6090;
+
+:root {
+    --Padding-top: 60px;
+    --Padding-Bottom: 60px;
+    --Color-Element: #ec6090;
     --Color-Text: #666461;
-    --Span-Color:white;
+    --Span-Color: white;
     --Section-Color: #27292a;
     --body-color: #1f2122;
 }
-body{
+
+body {
     background-color: var(--body-color);
     font-family: 'Poppins', sans-serif;
 }
-ul{
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.Container{
+
+.Container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* small */
-@media(min-width:768px){
-    .Container{
+@media(min-width:768px) {
+    .Container {
         width: 750px;
     }
 }
+
 /* medium */
-@media(min-width:992px){
-    .Container{
+@media(min-width:992px) {
+    .Container {
         width: 970px;
     }
 }
+
 /* large */
-@media(min-width:1200px){
-    .Container{
+@media(min-width:1200px) {
+    .Container {
         width: 1170px;
     }
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-::selection{
+
+::selection {
     background-color: var(--Color-Element);
     color: var(--Span-Color);
 }
+
 /* End global rules */
 /* STart Head */
-.Header{
+.Header {
     width: 100%;
     display: block;
 }
-@media(max-width:991px){
-    .Header{
+
+@media(max-width:991px) {
+    .Header {
         width: 100%;
         display: block;
         color: var(--Span-Color);
         border-radius: 50px;
     }
 }
-.Header .Links{
+
+.Header .Links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,15 +87,17 @@ html{
     padding: 20px 15px 10px 7px;
     margin-top: 15px;
 }
-@media(max-width:991px){
-    .Header .Links{
+
+@media(max-width:991px) {
+    .Header .Links {
         width: 100%;
         display: block;
     }
 }
+
 /* Responsive Design */
-@media(max-width:768px){
-    .Header .Links{
+@media(max-width:768px) {
+    .Header .Links {
         display: grid;
         height: 50vh;
         grid-template-rows: repeat(2, 100px);
@@ -94,25 +108,29 @@ html{
         gap: 30px;
     }
 }
-.Header .Links .First-Element{
+
+.Header .Links .First-Element {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
 }
+
 /* Responsive Design */
-@media(max-width:768px){
-    .Header .Links .First-Element{
+@media(max-width:768px) {
+    .Header .Links .First-Element {
         gap: 0px;
     }
 }
-@media(max-width:991px){
-    .Header .Links .First-Element .Logo a img{
+
+@media(max-width:991px) {
+    .Header .Links .First-Element .Logo a img {
         height: 40px;
         width: 140px;
     }
 }
-.Header .Links .First-Element .Inputs input{
+
+.Header .Links .First-Element .Inputs input {
     width: 200px;
     height: 40px;
     border: none;
@@ -121,38 +139,45 @@ html{
     padding: 10px;
     border-radius: 20px;
 }
+
 /* Responsive Design */
-@media(max-width:1024px){
-    .Header .Links .First-Element .Inputs input{
+@media(max-width:1024px) {
+    .Header .Links .First-Element .Inputs input {
         display: none;
     }
 }
-.Header .Links .First-Element .Inputs input::placeholder{
+
+.Header .Links .First-Element .Inputs input::placeholder {
     padding-left: 10px;
 }
-.Header .Links .First-Element .Inputs{
+
+.Header .Links .First-Element .Inputs {
     position: relative;
 }
-.Header .Links .First-Element .Inputs i:first-child{
+
+.Header .Links .First-Element .Inputs i:first-child {
     position: absolute;
     right: 11px;
     bottom: 11px;
     color: var(--Color-Text);
 }
+
 /* Responsive Design */
-@media(max-width:1024px){
-    .Header .Links .First-Element .Inputs i:first-child{
+@media(max-width:1024px) {
+    .Header .Links .First-Element .Inputs i:first-child {
         display: none;
     }
 }
-.Header .Links .Links-Items ul{
+
+.Header .Links .Links-Items ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* Responsive Design */
-@media(max-width:768px){
-    .Header .Links .Links-Items ul{
+@media(max-width:768px) {
+    .Header .Links .Links-Items ul {
         display: grid;
         justify-content: center;
         align-items: center;
@@ -160,29 +185,35 @@ html{
         text-align: center;
     }
 }
-.Header .Links .Links-Items ul li{
+
+.Header .Links .Links-Items ul li {
     margin-left: 30px;
 }
+
 /* Responsive Design */
-@media(max-width:768px){
-    .Header .Links .Links-Items ul li{
+@media(max-width:768px) {
+    .Header .Links .Links-Items ul li {
         margin-top: 20px;
         display: flex;
         align-items: center;
         text-align: center;
     }
 }
-.Header .Links .Links-Items ul li a{
+
+.Header .Links .Links-Items ul li a {
     color: var(--Color-Text);
     text-decoration: none;
 }
-.Header .Links .Links-Items ul li:nth-child(2) a{
+
+.Header .Links .Links-Items ul li:nth-child(2) a {
     color: var(--Color-Element);
 }
-.Header .Links .Links-Items ul li a:hover{
+
+.Header .Links .Links-Items ul li a:hover {
     color: var(--Color-Element);
 }
-.Header .Links .Links-Items ul li:nth-child(5){
+
+.Header .Links .Links-Items ul li:nth-child(5) {
     width: 120px;
     height: 45px;
     display: flex;
@@ -193,68 +224,80 @@ html{
     padding: 18px;
     transition: all 0.3s;
 }
-.Header .Links .Links-Items ul li:nth-child(5):hover{
+
+.Header .Links .Links-Items ul li:nth-child(5):hover {
     background-color: var(--Color-Element);
 }
-.Header .Links .Links-Items ul li:nth-child(5):hover a{
+
+.Header .Links .Links-Items ul li:nth-child(5):hover a {
     color: var(--Span-Color);
 }
-@media(max-width:768px){
-    .Header .Links .Links-Items ul li:nth-child(5){
+
+@media(max-width:768px) {
+    .Header .Links .Links-Items ul li:nth-child(5) {
         width: 0;
         height: 0;
         padding: 0;
         background-color: transparent;
     }
 }
-.Header .Links .Links-Items ul li img{
+
+.Header .Links .Links-Items ul li img {
     height: 30px;
     border-radius: 50%;
 }
+
 /* Responsive Design */
-@media(max-width:768px){
-    .Header .Links .Links-Items ul li img{
-        display:none;
+@media(max-width:768px) {
+    .Header .Links .Links-Items ul li img {
+        display: none;
     }
 }
+
 /* End Head */
 /* Start Browser */
-.Browser{
+.Browser {
     display: block;
     width: 100%;
     padding-top: var(--Padding-top);
 }
+
 /* Responsive Design */
-@media(max-width:786px){
-    .Browser{
+@media(max-width:786px) {
+    .Browser {
         display: block;
         width: 100%;
     }
 }
-.Browser .Container{
+
+.Browser .Container {
     background-color: var(--Section-Color);
     height: fit-content;
     padding: 20px 40px;
     border-radius: 30px;
 }
-.Browser .Featured .Parent-Featured{
+
+.Browser .Featured .Parent-Featured {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.Browser .Featured .Featured-left .Head-Featured h4
-,span{
+
+.Browser .Featured .Featured-left .Head-Featured h4,
+span {
     font-size: 30px;
     font-weight: bold;
     color: var(--Color-Text);
 }
-.Browser .Featured .Featured-left
-,.Browser .Featured .Featured-Right{
+
+.Browser .Featured .Featured-left,
+.Browser .Featured .Featured-Right {
     background-color: var(--body-color);
     border-radius: 30px;
     padding: 20px;
 }
-.Browser .Featured .Featured-left .Parent-Box{
+
+.Browser .Featured .Featured-left .Parent-Box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -262,24 +305,29 @@ html{
     gap: 35px;
     overflow: hidden;
 }
-.Browser .Featured .Featured-left .Head-Featured{
+
+.Browser .Featured .Featured-left .Head-Featured {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
-.Browser .Featured .Featured-left .Head-Featured h4{
+
+.Browser .Featured .Featured-left .Head-Featured h4 {
     color: var(--Span-Color);
     font-size: 45px;
     text-decoration: underline;
 }
-.Browser .Featured .Featured-left .Head-Featured h4 span{
+
+.Browser .Featured .Featured-left .Head-Featured h4 span {
     font-size: 45px;
     color: var(--Color-Element);
 }
-.Browser .Featured .Featured-left .Parent-Box .Box{
-    animation: slider-Show 30s linear infinite;
-    transition: all 0.5s;
+
+.Browser .Featured .Featured-left .Parent-Box .Box {
+    animation: slider-Show 10s ease-out infinite;
 }
+
 @keyframes slider-Show {
     0% {
         transform: translateX(0);
@@ -297,11 +345,16 @@ html{
         transform: translateX(-700px);
     }
 
+    90% {
+        transform: translateX(0px);
+    }
+
     100% {
         transform: translateX(0px);
     }
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Box > i{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Box>i {
     padding: 15px;
     border-radius: 30px;
     background-color: var(--Section-Color);
@@ -309,19 +362,23 @@ html{
     text-decoration: none;
     cursor: pointer;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Content{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Img img{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Img img {
     height: 350px;
     border-radius: 30px;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Img{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Img {
     position: relative;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Img::before{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Img::before {
     content: '2.4K Streaming';
     bottom: 0;
     left: 28px;
@@ -332,136 +389,170 @@ html{
     padding: 15px;
     transition: all 0.5s;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Img:hover::before{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Img:hover::before {
     bottom: 7px;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Content p{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Content p {
     color: var(--Span-Color);
     font-size: 18px;
     margin: 10px;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Content:last-child p{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Content:last-child p {
     color: #777;
     font-size: 18px;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Content i{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Content i {
     color: yellow;
     font-size: 18px;
 }
-.Browser .Featured .Featured-left .Parent-Box .Box .Content:last-child i{
+
+.Browser .Featured .Featured-left .Parent-Box .Box .Content:last-child i {
     color: var(--Color-Element);
     font-size: 18px;
 }
-.Browser .Parent-Featured .Featured-Right .Head-Featured-Right h4{
+
+.Browser .Parent-Featured .Featured-Right .Head-Featured-Right h4 {
     font-size: 35px;
     color: var(--Span-Color);
     text-decoration: underline;
+    margin-top: 20px;
 }
-.Browser .Parent-Featured .Featured-Right .Head-Featured-Right h4 span{
+
+.Browser .Parent-Featured .Featured-Right .Head-Featured-Right h4 span {
     color: var(--Color-Element);
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box {
     display: grid;
     gap: 50px;
     justify-content: center;
     align-items: center;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Box{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Box {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Img img{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Img img {
     border-radius: 30px;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content {
     text-align: left;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content p:first-child{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content p:first-child {
     color: white;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content p:nth-child(2){
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content p:nth-child(2) {
     color: #777;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content  span{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content span {
     font-size: 14px;
-    color:var(--Span-Color);
+    color: var(--Span-Color);
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon {
     display: flex;
     gap: 15px;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
+    ;
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon .First-Icon
-,.Second-Icon{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon .First-Icon,
+.Second-Icon {
     display: flex;
     gap: 6px;
     justify-content: center;
     align-items: center;
     color: var(--Span-Color);
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon .First-Icon > i{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon .First-Icon>i {
     color: var(--Color-Element);
 }
-.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon .Second-Icon > i{
+
+.Browser .Parent-Featured .Featured-Right .Parent-Box .Content .Icon .Second-Icon>i {
     color: yellow;
 }
+
+/* End  Browser */
 /* Start Content Browser */
-.Content-Browser{
+.Content-Browser {
     padding-top: var(--Padding-top);
     padding-bottom: var(--Padding-Bottom);
-} 
-.Content-Browser .Services .Head-Services{
+}
+
+.Content-Browser .Services .Head-Services {
     margin-bottom: 100px;
 }
-.Content-Browser .Services .Head-Services h4{
+
+.Content-Browser .Services .Head-Services h4 {
     font-size: 35px;
     color: var(--Span-Color);
     text-align: center;
     text-decoration: underline;
 }
-.Content-Browser .Services .Head-Services h4 span{
+
+.Content-Browser .Services .Head-Services h4 span {
     color: var(--Color-Element);
     font-size: 35px;
 }
-.Content-Browser .Services .Parent-Box{
+
+.Content-Browser .Services .Parent-Box {
     display: grid;
     grid-template-columns: repeat(auto-fit, 335px);
     gap: 30px
 }
-.Content-Browser .Services .Parent-Box .Box{
+
+.Content-Browser .Services .Parent-Box .Box {
     border: 1px solid #ccc;
     border-radius: 30px;
     padding: 15px;
 }
-.Content-Browser .Services .Parent-Box .Box .Img img{
+
+.Content-Browser .Services .Parent-Box .Box .Img img {
     border-radius: 30px;
 }
-.Content-Browser .Services .Parent-Box .Box > p{
+
+.Content-Browser .Services .Parent-Box .Box>p {
     color: var(--Span-Color);
     font-size: 22px;
 }
-.Content-Browser .Services .Parent-Box .Box .Text p{
+
+.Content-Browser .Services .Parent-Box .Box .Text p {
     font-size: 14px;
     opacity: 0.5;
     color: #777;
     line-height: 1.8;
 }
-.Content-Browser .Services .Parent-Box .Box .Text span{
+
+.Content-Browser .Services .Parent-Box .Box .Text span {
     font-size: 15px;
 }
-.Content-Browser .Services .Parent-Box .Box .Text span a{
+
+.Content-Browser .Services .Parent-Box .Box .Text span a {
     text-decoration: none;
     color: var(--Color-Element);
 }
-.Content-Browser > .Link{
+
+.Content-Browser>.Link {
     margin-top: 50px;
     text-align: center;
 }
-.Content-Browser > .Link a{
+
+.Content-Browser>.Link a {
     text-decoration: none;
     background-color: var(--Color-Element);
     padding: 15px;
@@ -470,23 +561,28 @@ html{
     text-align: center;
     margin: auto;
 }
-.Content-Browser > .Link a:hover{
+
+.Content-Browser>.Link a:hover {
     background-color: var(--Span-Color);
 }
-.Content-Browser > .Link:hover a{
+
+.Content-Browser>.Link:hover a {
     color: var(--Color-Element)
-} 
+}
+
 /* End Content Browser */
 /* Start Gallery */
-.Gallery .parent-Box{
+.Gallery .parent-Box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
-.Gallery .parent-Box .Box .Img{
+
+.Gallery .parent-Box .Box .Img {
     position: relative;
 }
-.Gallery .parent-Box .Box .Img:hover::before{
+
+.Gallery .parent-Box .Box .Img:hover::before {
     content: 'live';
     position: absolute;
     background-color: var(--Color-Element);
@@ -502,7 +598,8 @@ html{
     z-index: 1;
     transition: all 0.3s;
 }
-.Gallery .parent-Box .Box .Img:hover:after{
+
+.Gallery .parent-Box .Box .Img:hover:after {
     content: '1.5K View';
     content: 'Cs-Go';
     position: absolute;
@@ -517,35 +614,42 @@ html{
     right: 30px;
     bottom: 8px;
     z-index: 1;
-    transition: all 0.3s;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    transition: all 0.3s;
 }
-.Gallery .parent-Box .Img img{
+
+.Gallery .parent-Box .Img img {
     border-radius: 30px;
 }
+
 .Gallery .parent-Box .Box .Icon {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 5px;
 }
+
 .Gallery .parent-Box .Box .Icon img {
     border-radius: 30px;
 }
+
 .Gallery .parent-Box .Box .Icon i {
     background-color: var(--Color-Element);
     padding: 3px;
     border-radius: 30px;
     color: white;
 }
-.Gallery .parent-Box .Box .Icon p{
+
+.Gallery .parent-Box .Box .Icon p {
     color: var(--Color-Element);
 }
-.Gallery .parent-Box .Box > p{
+
+.Gallery .parent-Box .Box>p {
     color: var(--Span-Color);
     font-size: 26px;
     font-weight: bold;
 }
-.Gallery .Link{
+
+.Gallery .Link {
     width: 170px;
     background-color: var(--Color-Element);
     padding: 15px;
@@ -553,30 +657,37 @@ html{
     text-align: center;
     margin: auto;
 }
-.Gallery .Link a{
+
+.Gallery .Link a {
     text-decoration: none;
     color: white;
 }
-.Gallery .Link:hover{
+
+.Gallery .Link:hover {
     background-color: var(--Span-Color);
 }
-.Gallery .Link:hover a{
+
+.Gallery .Link:hover a {
     color: var(--Color-Element);
 }
+
 /* End Gallery */
 /* Start Footer */
-Footer .Copy-Right{
+Footer .Copy-Right {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 1px;
 }
-Footer .Copy-Right p{
+
+Footer .Copy-Right p {
     color: white;
     font-size: 20px;
 }
-Footer .Copy-Right span{
+
+Footer .Copy-Right span {
     color: var(--Color-Element);
     font-size: 20px;
 }
+
 /* End Footer */
 /* End Browser */
