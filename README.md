@@ -19,7 +19,7 @@ The page features:
 
 ## 2. 👤 Developer
 
-- Nour Eldeen Ibrahem Mohamed Mohamed
+- Nour Ibrahem 
 
 ---
 
@@ -63,7 +63,7 @@ The page features:
 
 Developed by:
 
-**Nour Eldeen Ibrahem Mohamed Mohamed**  
+**Nour Ibrahem**  
 📧 Email: nouribrahem207@gmail.com  
 🔗 [GitHub Profile](https://github.com/Nour-ibrahem30)  
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/nour-ibrahem-499172346)
